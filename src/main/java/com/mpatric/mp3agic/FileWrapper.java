@@ -42,7 +42,15 @@ public class FileWrapper {
 	}
 
 	public String getFilename() {
+		return path.getFileName().toString();
+	}
+
+	public String getFilePath() {
 		return path.toString();
+	}
+
+	public Path getPath() {
+		return path;
 	}
 
 	public long getLength() {
